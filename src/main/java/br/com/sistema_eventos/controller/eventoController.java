@@ -24,7 +24,7 @@ public class eventoController {
     @PostMapping("/cadastrar")
     public String cadastrarEventos (eventosModel eventos){
         service.cadastrarEvento(eventos);
-        return "/eventos";
+        return "cadastrar";
     }
 
     @GetMapping("/eventos")
