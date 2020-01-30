@@ -38,6 +38,17 @@ public class eventosModel {
     @Column
     private Boolean ativo;
 
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
+    }
+
+    @Column
+    private String imagem;
+
     public int getId() {
         return id;
     }
