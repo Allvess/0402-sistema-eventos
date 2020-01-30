@@ -12,7 +12,9 @@
 <div th:each="evento : ${eventos}">
     <div>
         <p><strong>Nome:</strong>
-            <a th:href="@{/evento/evento.nome}">Aparecer evento nome </a>
+            <a th:href="@{'/evento/' + ${evento.nome}}">
+                <span th:text="${evento.nome}"></span>
+            </a>
         </p>
         <p>Tipo: <span th:text="${evento.tipo}"></span></p>
         <p>Data: <span th:text="${evento.data}"></span></p>
