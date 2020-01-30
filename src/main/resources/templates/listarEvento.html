@@ -7,13 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Cadastrado com sucesso. Veja a lista de eventos!</h1>
+<h1></h1>
 
-<div th:each="evento : ${eventos}">
+<div>
     <div>
-        <p><strong>Nome:</strong>
-            <a th:href="@{/evento/evento.nome}">Aparecer evento nome </a>
-        </p>
+        <p><strong>Nome:</strong> <span th:text="${evento.nome}"></span></p>
         <p>Tipo: <span th:text="${evento.tipo}"></span></p>
         <p>Data: <span th:text="${evento.data}"></span></p>
         <p>Inicio:<span th:text="${evento.horaInicio}"></span></p>
